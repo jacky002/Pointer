@@ -11,12 +11,12 @@ void main(void)
 	char a[] = "pcnoproblem"; //«Å§i¤@­Ó¦r¦êa
 
 	printf("%c\n", *(*(names + 1) + 2));
-	printf("%c point address = %p.\n", *(*(names + 1) + 2), &(*(*(names + 1) + 2)));
-	printf("%c point address = %p.\n", *(*(names + 1) + 3), &(*(*(names + 1) + 3)));
+	printf("%c point address = 0x%p.\n", *(*(names + 1) + 2), &(*(*(names + 1) + 2)));
+	printf("%c point address = 0x%p.\n", *(*(names + 1) + 3), &(*(*(names + 1) + 3)));
 
-	printf("%c point address = %p.\n", *(*(names + 2) + 2), &(*(*(names + 2) + 2)));
-	printf("%c point address = %p.\n", *(*(names)+2), &(*(*(names)+2)));
-	printf("%c point address = %p.\n", *(*(names)+3), &(*(*(names)+3)));
+	printf("%c point address = 0x%p.\n", *(*(names + 2) + 2), &(*(*(names + 2) + 2)));
+	printf("%c point address = 0x%p.\n", *(*(names)+2), &(*(*(names)+2)));
+	printf("%c point address = 0x%p.\n", *(*(names)+3), &(*(*(names)+3)));
 
 	printf("%c\n", names[1][2]);
 
