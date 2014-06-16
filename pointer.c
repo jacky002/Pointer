@@ -1,3 +1,11 @@
+
+/*
+ * Source code publish in GitHub https://github.com/jacky002/Pointer
+ *
+ * Objective: This code is only about pointer test program in C language
+ *            Use it to flash my memory on coding C language when I study
+ *            the book - Understanding and Using C Pointers
+ */
 #include "stdio.h"
 #include "stdlib.h"
 
