@@ -7,6 +7,7 @@ void sizeoftype();
 void pointaddressformat();
 void void_conversion();
 void ptr_vector();
+void DynMem();
 
 int main(int argc, char **argv)
 {
@@ -15,6 +16,7 @@ int main(int argc, char **argv)
 	point();
 	void_conversion();
 	ptr_vector();
+	DynMem();
 //	system("pause");
 	return 0;
 }
@@ -114,6 +116,26 @@ void ptr_vector()
 	printf("p0 - p1: %d\n", p0-p1);   // p0-p1 =-1
 
 	printf("*p0-*p1: %d\n",*p0-*p1);  // 28(p0)-41(p1) = -13
+}
+
+void DynMem()
+{
+	int *pi = (int *) malloc(sizeof(int));
+	char *name = (char*) malloc(strlen("Susan")+1);  // ad one for NULL character "/0"
+
+	printf("\n*****  Dynamic Memory Management *****\n");
+
+	strcpy(name, "Susan");
+	while(*name!= 0) {
+		printf(" %c ", *name);
+	name++;
+	}
+	printf("\n");
+
+	*pi = 5;
+
+	printf("*pi: %d\n", *pi);
+	free(pi);
 
 
 }
