@@ -31,6 +31,6 @@ void main(void)
 	printf("flat為 %d 位元組.\n", sizeof(float));
 	printf("double為 %d 位元組.\n", sizeof(double));
 
-	// system("pause");
+	system("pause");
 
 }
